@@ -10,7 +10,7 @@ message = []
 # ask user for the operation they want to perform
 operation = input(
     """
-        Net-Centric Math Server
+        Net-Centric Math Server By Ayanda Johnson 2014/1/52165CT
         
         Please select an operation to perform:
         1 - Addition   2 - Subtraction     3 - Multiplication
@@ -37,7 +37,7 @@ message = ','.join(message)
 socket.sendto(message, ('localhost', 2012))
 
 # receive result from server
-server_result, server_address = socket.recvfrom(1024*3f)
+server_result, server_address = socket.recvfrom(1024*3)
 print('server result: ' + server_result)
 
 # close connection between client and server
